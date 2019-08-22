@@ -1,0 +1,44 @@
+.header {
+  width: 100%;
+  height: 100vh;
+  background: url(/images/background.gif) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.main {
+  padding-top: 80px;
+}
+
+.fblock {
+  background-color: #f2f285;
+}
+
+.contactus {
+  height: 80vh;
+  background-attachment: scroll;
+  background-image: url(/images/gdgbackground.jpg);
+  background-size: 100%;
+  opacity: 0.5;
+  background-color: #000;
+  transition:opacity 500ms ease-in-out;
+}
+
+.overlay {
+  transition: .5s ease;
+  opacity: 1;
+  z-index: -1;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.text-lg {
+  font-size: 125%;
+}
+.text-big {
+  font-size: 175%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}

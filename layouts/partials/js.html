@@ -4,3 +4,11 @@
 {{ $js := slice $jquery $popperjs $bootstrap | resources.Concat "js/bundle.js" | resources.Minify }}
 
 <script src="{{$js.RelPermalink}}"></script>
+<script>
+  $(window).on("scroll", function() {
+    if($(window).scrollTop()) {
+          $('nav').addClass('navbar-dark bg-dark');
+          $('nav').removeClass('navbar-reverse bg-transparent');
+    }
+  })
+</script>
