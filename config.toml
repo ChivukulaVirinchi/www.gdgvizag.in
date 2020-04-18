@@ -1,4 +1,4 @@
 baseURL = "http://localhost:1313/"
 languageCode = "en-us"
-title = "Google Developer Group, Visakhapatnam"
+title = "Google Developer Group, Vishakhapatnam and Women TechMakers Vizag"
 disableKinds = ["taxonomy","taxonomyTerm"]

@@ -4,7 +4,11 @@
 {{ $js := slice $jquery $popperjs $bootstrap | resources.Concat "js/bundle.js" | resources.Minify }}
 
 <script src="{{$js.RelPermalink}}"></script>
-<script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+
+<script> 
   $(window).on("scroll", function() {
     if($(window).scrollTop()) {
           $('nav').addClass('navbar-dark bg-dark');
@@ -12,3 +16,76 @@
     }
   })
 </script>
+
+<!-- Script for video background -->
+<script>
+  jQuery(function () {
+
+    // Youtube player
+    window.videoPlayer;
+    
+    window.onYouTubeIframeAPIReady = function () {
+     var videoPlayerId = $('#videoPlayer').attr('data-videoid');
+     window.videoPlayer = new YT.Player('videoPlayer', {
+      height: '1080',
+      width: '1920',
+      videoId: videoPlayerId,
+      playerVars: {
+       'controls': 0,
+       'autoplay': 1,
+       'mute': 1,
+       'loop': 1,
+       'showinfo': 0,
+       'modestbranding': 1
+      },
+      events: {
+       'onReady': onVideoPlayerReady,
+       'onStateChange': onVideoPlayerReady
+      }
+     });
+    }
+    
+    function onVideoPlayerReady(event) {
+     videoPlayer.playVideo();
+    }
+    });
+</script>
+
+
+<!-- Script for Gallery -->
+<script>
+  $('.portfolio-item').isotope({
+  itemSelector: '.item',
+  layoutMode: 'fitRows'
+});
+$('.portfolio-menu ul li').click(function(){
+  $('.portfolio-menu ul li').removeClass('active');
+  $(this).addClass('active');
+  
+  var selector = $(this).attr('data-filter');
+  $('.portfolio-item').isotope({
+    filter:selector
+  });
+  return  false;
+});
+$(document).ready(function() {
+var popup_btn = $('.popup-btn');
+popup_btn.magnificPopup({
+type : 'image',
+gallery : {
+  enabled : true
+}
+});
+});
+</script>
+
+<!--Script for FAQ -->
+<script>
+    $(function(){
+      //$(".chevron-down").
+      $("div[data-toggle=collapse]").click(function(){
+          $(this).children('span').toggleClass("fa-chevron-down fa-chevron-up");
+      });
+  })
+</script>
+

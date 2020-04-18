@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Google Developer Group, Vishakhapatnam and Women TechMakers Vizag</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Google Developer Group, Vishakhapatnam and Women TechMakers Vizag</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Aug 2019 09:45:23 +0530</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Code of Conduct</title>
+      <link>http://localhost:1313/code/</link>
+      <pubDate>Thu, 22 Aug 2019 09:45:23 +0530</pubDate>
+      
+      <guid>http://localhost:1313/code/</guid>
+      <description>Code of Conduct GDG Vizag / Community Group is dedicated to providing a harassment-free and inclusive event experience for everyone regardless of gender identity and expression, sexual orientation, disabilities, neurodiversity, physical appearance, body size, ethnicity, nationality, race, age, religion, or other protected category. We do not tolerate harassment of event participants in any form. GDG Vizag / Community Group takes violations of our policy seriously and will respond appropriately.
+ All participants of GDG Vizag / Community Group events must abide by the following policy:</description>
+    </item>
+    
+  </channel>
+</rss>
